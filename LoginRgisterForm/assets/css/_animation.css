@@ -1,0 +1,41 @@
+/* add these classes with jquery */
+.overlay-container .login-overlay {
+  text-align: center;
+  transition: 0.3s;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.active-form .right-side {
+  transition: 1.5s;
+  left: 48%;
+  opacity: 1;
+  z-index: 4;
+}
+.active-form .left-side {
+  transition: 0.2s;
+  left: -10%;
+  opacity: 0;
+}
+.active-overlay {
+  box-shadow: -1px 1px 1px 1px #5e5e5ec9 !important;
+  z-index: 100;
+  transition: 1s;
+  right: 50% !important;
+  opacity: 1 !important;
+  border-radius: 10px 0px 0px 10px !important;
+}
+.active-overlay .register-overlay {
+  transition: 0.5s;
+  opacity: 0;
+}
+.active-overlay .login-overlay {
+  opacity: 1;
+}
+.overlay-container .active-login-overlay {
+  transition: 1s;
+  opacity: 1;
+}
